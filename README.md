@@ -1,4 +1,4 @@
-# upload build to Hockey App
+# Upload build to Hockey App
 Upload your apk or ipa file to Hockey APP
 
 # Installation
