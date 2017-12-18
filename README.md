@@ -1,8 +1,8 @@
-# download build from Phonegap Build
-downloads the Android and iOS package to Phonegap Build
+# upload build to Hockey App
+Upload your apk or ipa file to Hockey APP
 
 # Installation
-npm install -g download-builds-from-phonegap
+npm install -g upload-builds-to-hockey-app
 
 
 ## Usage:
@@ -10,57 +10,13 @@ npm install -g download-builds-from-phonegap
 You can import this script inside your NodeJS application:
 
 First you need it installed locally:
-`npm install download-builds-from-phonegap --save-dev`
+`npm install upload-builds-to-hockey-app --save-dev`
 
 Once you've done this you can use it in code:
 
 ```
-var ionicToPhonegap = require('ionic-to-phonegap-build');
+var upload = require('upload-builds-to-hockey-app');
 
-ionicToPhonegap.sendToPhonegapBuild('Your Phonegap app id', 'Your Phonega auth token', isDebugBoolean[true/false]);
-
-```
-
-## Parameters
-
-### Phonegap application id
-ex '2334553'
-
-### Phonegap token id
-ex 'qfqfggFDGSsgdggs'
-
-### callback 
-
-## Execute with npm scripts
-
-
-### Create js file
-
-Create a phbuild.js file with following contents:
-
-```
-
-var ionicToPhonegap = require('ionic-to-phonegap-build');
-ionicToPhonegap.sendToPhonegapBuild('2922066', 'D9eKg6fdggjuxjskEbGm4KZy', true);
-
-```
-
-### Add script in package.json
-in your package.json add following script in the scripts section:
-
-```
-
-scripts: {
-"phbuild": "node phbuild.js"
-  },
-
-```
-
-### Run it
-Now you can run it manually:
-
-```
-
-npm run phbuild
+upload.uploadToHockey(hockeyAppId, hockeyAppAuthToken, notes, inputFile, callback);
 
 ```
