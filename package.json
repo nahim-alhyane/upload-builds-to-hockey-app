@@ -2,7 +2,7 @@
     "author": "Nahim ALHYANE",
     "license": "MIT",
     "name": "upload-builds-to-hockey-app",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Upload your package (ipa, apk) to Hockey App",
     "bin": {
         "build-download-phonegap": "bin/index.js"
